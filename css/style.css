@@ -1,0 +1,458 @@
+/* 
+Theme Name: Iglesia Elim Laguna Niguel
+Author: Robert Gama
+*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    height: 100%;
+}
+
+body {
+    font-family: 'Enriqueta', serif;
+}
+
+#page-container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 300px;
+}
+
+
+.custom-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    width: 10rem;
+}
+
+/* =========== Mobile ============== */
+
+/* Front Page */
+
+.quote-container {
+    font-family: 'Dancing Script';
+    font-size: 1.2rem;
+    quotes: "“""”""‘""’";
+}
+
+.quote-container>p::before {
+    font-family: 'Times New Roman', Times, serif;
+    content: open-quote;
+}
+
+.quote-container>p::after {
+    font-family: 'Times New Roman', Times, serif;
+    content: close-quote;
+}
+
+.fp-header {
+    font-family: 'Open Sans Condensed Serif', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.fp-text {
+    font-family: 'Enriqueta', serif;
+    font-size: 0.875rem;
+}
+
+.modal-header {
+    background: white;
+    opacity: .8;
+}
+.modal-body {
+    background: white;
+}
+
+.modal {
+    max-width: 50%;
+    max-height: 75%;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    /* width: 200px; 
+    height: 200px;  */
+    background: #fff;				
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%); 
+    -o-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+}
+
+/* About Us */
+.info-text {
+    font-size: 0.875rem;
+}
+
+.info-text > p {
+    font-family: 'Enriqueta', serif;
+    margin-bottom: 20px;
+}
+
+.info-title {
+    font-family: 'Open Sans Condensed Serif', sans-serif; 
+    font-size: 1.5rem;
+    color: rgb(178, 210, 243);
+}
+
+.pastor-image {
+    margin-bottom: 10px;
+}
+
+.pastor-img-caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Pastor Roque Pena */
+
+.roque-header {
+    color: rgb(178, 210, 243);
+}
+
+.pastor-text {
+    font-size: 1rem;
+    font-family: 'Enriqueta', serif;
+}
+
+.pastor-text {
+    line-height: 2;
+}
+
+.pastor-quote {
+    background: rgb(178, 210, 243);
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;        
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+}
+.pastor-quote > p{
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    quotes: "“""”""‘""’";
+    z-index: 1;
+}
+
+.pastor-quote > span {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.pastor-quote > p::before {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgb(149, 176, 204);
+    content: open-quote;
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    z-index: -1;
+}   
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: black;
+    position: relative;
+    height: 300px;
+    margin-top: -300px;
+    padding-top: 20px;
+    clear: both;
+}
+
+.contact-container {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 1.2rem;
+}
+
+.hours-container {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.hours-title {
+    font-size: 1.2rem;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-container {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.social-container>a {
+    color: black;
+    text-decoration: none;
+}
+
+.social-container>a:hover {
+    color: rgb(178, 210, 243);
+}
+
+.social-title {
+    font-size: 1.2rem;
+}
+
+/* =========== End Mobile ============== */
+
+
+@media only screen and (min-width: 765px) {
+
+    #page-container {
+        margin: 25px 10%;
+        min-height: 100%;
+    }
+
+    #main {
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
+    .quote-container {
+        font-family: 'Dancing Script';
+        font-size: 2rem;
+        quotes: "“""”""‘""’";
+    }
+
+    .fp-header {
+        font-family: 'Open Sans Condensed Serif', sans-serif;
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .fp-text {
+        font-size: 1.2rem;
+    }
+
+    .info-button,
+    .event-button {
+        margin-bottom: 50px;
+    }
+
+    /* Pastor Roqjue Pena */
+    .roque-header {
+        letter-spacing: 3px;
+        color: rgb(178, 210, 243);
+    }
+    .roque-image {
+        width: 50%;
+    }
+    .pastor-text {
+        line-height: 2;
+    }
+
+    .pastor-quote {
+        background: rgb(178, 210, 243);
+        padding: 40px;
+        width: 75%;
+        margin: 20px auto;        
+        border-radius: 5px;
+        position: relative;
+        z-index: 0;
+    }
+    .pastor-quote > p{
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5;
+        quotes: "“""”""‘""’";
+        z-index: 1;
+    }
+
+    .pastor-quote > span {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .pastor-quote > p::before {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10rem;
+        font-weight: bold;
+        color: rgb(149, 176, 204);
+        content: open-quote;
+        position: absolute;
+        top: -100px;
+        left: -10px;
+        z-index: -1;
+    }   
+    /* Footer  */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        height: 150px;
+        margin-top: -150px;
+        padding-top: 20px;
+        clear: both;
+    }
+
+    footer>div {
+        width: 30%
+    }
+}
+
+
+@media only screen and (min-width: 1023px) {
+
+    #page-container {
+        margin: 25px 10%;
+        min-height: 100%;
+    }
+
+    #main {
+        margin: 25px 5%;
+        overflow: auto;
+        padding-bottom: 300px;
+    }
+
+    .quote-container {
+        font-family: 'Dancing Script';
+        font-size: 2rem;
+        quotes: "“""”""‘""’";
+    }
+
+    .fp-header {
+        font-family: 'Open Sans Condensed Serif', sans-serif;
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .fp-text {
+        font-size: 1.2rem;
+    }
+
+    .info-button {
+        margin-bottom: 50px;
+    }
+    /* Quienes Somos */
+    .info-text {
+        font-size: 1rem;
+    }
+
+    /* Pastor Roque Pena */
+    .roque-image {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .roque-header {
+        font-family: 'Open Sans Condensed Serif', sans-serif; 
+        font-weight: bold;
+        letter-spacing: 1.5rem;
+        color: rgb(178, 210, 243);
+    }
+
+    .pastor-text {
+        line-height: 2;
+    }
+
+    .pastor-quote {
+        background: rgb(178, 210, 243);
+        padding: 40px;
+        width: 75%;
+        margin: 20px auto;        
+        border-radius: 5px;
+        position: relative;
+        z-index: 0;
+    }
+    .pastor-quote > p{
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5;
+        quotes: "“""”""‘""’";
+        z-index: 1;
+    }
+
+    .pastor-quote > span {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .pastor-quote > p::before {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10rem;
+        font-weight: bold;
+        color: rgb(149, 176, 204);
+        content: open-quote;
+        position: absolute;
+        top: -100px;
+        left: -10px;
+        z-index: -1;
+    }   
+
+
+    /* Events */
+
+
+    
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer>div {
+        width: 30%
+    }
+
+    .contact-container {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .contact-title {
+        font-size: 1.2rem;
+    }
+    
+    .hours-container {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .hours-title {
+        font-size: 1.2rem;
+    }
+    
+    .hours-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .social-container {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .social-title {
+        font-size: 1.2rem;
+    }
+}
