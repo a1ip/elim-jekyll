@@ -1,7 +1,3 @@
-/* 
-Theme Name: Iglesia Elim Laguna Niguel
-Author: Robert Gama
-*/
 body,
 html {
     margin: 0;
@@ -23,14 +19,9 @@ body {
     padding-bottom: 300px;
 }
 
-
-.custom-logo {
-    width: 100px;
-    height: 100px;
-}
-
+/* Nav */
 .logo {
-    width: 10rem;
+    width: 8.5rem;
 }
 
 /* =========== Mobile ============== */
@@ -68,24 +59,18 @@ body {
     background: white;
     opacity: .8;
 }
-.modal-body {
-    background: white;
-}
 
 .modal {
-    max-width: 50%;
-    max-height: 75%;
+    width: 100%;
+    height: auto;
     position: fixed;
     top: 50%;
-    left: 50%; 
-    /* width: 200px; 
-    height: 200px;  */
-    background: #fff;				
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%); 
-    -ms-transform: translate(-50%, -50%); 
-    -o-transform: translate(-50%, -50%); 
-    transform: translate(-50%, -50%); 
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* About Us */
@@ -93,13 +78,13 @@ body {
     font-size: 0.875rem;
 }
 
-.info-text > p {
+.info-text>p {
     font-family: 'Enriqueta', serif;
     margin-bottom: 20px;
 }
 
 .info-title {
-    font-family: 'Open Sans Condensed Serif', sans-serif; 
+    font-family: 'Open Sans Condensed Serif', sans-serif;
     font-size: 1.5rem;
     color: rgb(178, 210, 243);
 }
@@ -132,12 +117,13 @@ body {
     background: rgb(178, 210, 243);
     padding: 20px;
     width: 100%;
-    margin: 20px auto;        
+    margin: 20px auto;
     border-radius: 5px;
     position: relative;
     z-index: 0;
 }
-.pastor-quote > p{
+
+.pastor-quote>p {
     margin-top: 10px;
     color: white;
     font-size: 1rem;
@@ -146,14 +132,14 @@ body {
     z-index: 1;
 }
 
-.pastor-quote > span {
+.pastor-quote>span {
     display: flex;
     justify-content: flex-end;
     color: white;
     font-size: 1.2rem;
 }
 
-.pastor-quote > p::before {
+.pastor-quote>p::before {
     font-family: 'Times New Roman', Times, serif;
     font-size: 10rem;
     font-weight: bold;
@@ -163,7 +149,7 @@ body {
     top: -100px;
     left: -10px;
     z-index: -1;
-}   
+}
 
 /* Footer */
 footer {
@@ -219,7 +205,6 @@ footer {
 
 /* =========== End Mobile ============== */
 
-
 @media only screen and (min-width: 765px) {
 
     #page-container {
@@ -232,6 +217,8 @@ footer {
         padding-bottom: 100px;
     }
 
+
+    /* Front Page */
     .quote-container {
         font-family: 'Dancing Script';
         font-size: 2rem;
@@ -248,19 +235,29 @@ footer {
         font-size: 1.2rem;
     }
 
-    .info-button,
-    .event-button {
-        margin-bottom: 50px;
+    .modal {
+        width: 70%;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
-    /* Pastor Roqjue Pena */
+    /* Pastor Roque Pena */
     .roque-header {
         letter-spacing: 3px;
         color: rgb(178, 210, 243);
     }
+
     .roque-image {
         width: 50%;
     }
+
     .pastor-text {
         line-height: 2;
     }
@@ -269,12 +266,13 @@ footer {
         background: rgb(178, 210, 243);
         padding: 40px;
         width: 75%;
-        margin: 20px auto;        
+        margin: 20px auto;
         border-radius: 5px;
         position: relative;
         z-index: 0;
     }
-    .pastor-quote > p{
+
+    .pastor-quote>p {
         color: white;
         font-size: 1rem;
         line-height: 1.5;
@@ -282,14 +280,14 @@ footer {
         z-index: 1;
     }
 
-    .pastor-quote > span {
+    .pastor-quote>span {
         display: flex;
         justify-content: flex-end;
         color: white;
         font-size: 1.2rem;
     }
 
-    .pastor-quote > p::before {
+    .pastor-quote>p::before {
         font-family: 'Times New Roman', Times, serif;
         font-size: 10rem;
         font-weight: bold;
@@ -299,7 +297,8 @@ footer {
         top: -100px;
         left: -10px;
         z-index: -1;
-    }   
+    }
+
     /* Footer  */
     footer {
         display: flex;
@@ -331,6 +330,7 @@ footer {
         padding-bottom: 300px;
     }
 
+    /* Front Page */
     .quote-container {
         font-family: 'Dancing Script';
         font-size: 2rem;
@@ -347,9 +347,19 @@ footer {
         font-size: 1.2rem;
     }
 
-    .info-button {
-        margin-bottom: 50px;
+    .modal {
+        width: 80%;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
+
     /* Quienes Somos */
     .info-text {
         font-size: 1rem;
@@ -362,7 +372,7 @@ footer {
     }
 
     .roque-header {
-        font-family: 'Open Sans Condensed Serif', sans-serif; 
+        font-family: 'Open Sans Condensed Serif', sans-serif;
         font-weight: bold;
         letter-spacing: 1.5rem;
         color: rgb(178, 210, 243);
@@ -376,12 +386,13 @@ footer {
         background: rgb(178, 210, 243);
         padding: 40px;
         width: 75%;
-        margin: 20px auto;        
+        margin: 20px auto;
         border-radius: 5px;
         position: relative;
         z-index: 0;
     }
-    .pastor-quote > p{
+
+    .pastor-quote>p {
         color: white;
         font-size: 1rem;
         line-height: 1.5;
@@ -389,14 +400,14 @@ footer {
         z-index: 1;
     }
 
-    .pastor-quote > span {
+    .pastor-quote>span {
         display: flex;
         justify-content: flex-end;
         color: white;
         font-size: 1.2rem;
     }
 
-    .pastor-quote > p::before {
+    .pastor-quote>p::before {
         font-family: 'Times New Roman', Times, serif;
         font-size: 10rem;
         font-weight: bold;
@@ -406,13 +417,7 @@ footer {
         top: -100px;
         left: -10px;
         z-index: -1;
-    }   
-
-
-    /* Events */
-
-
-    
+    }
 
     /* Footer */
     footer {
@@ -420,6 +425,7 @@ footer {
         flex-direction: row;
         justify-content: space-around;
     }
+
     footer>div {
         width: 30%
     }
@@ -428,30 +434,30 @@ footer {
         font-size: 1rem;
         text-align: center;
     }
-    
+
     .contact-title {
         font-size: 1.2rem;
     }
-    
+
     .hours-container {
         font-size: 1rem;
         text-align: center;
     }
-    
+
     .hours-title {
         font-size: 1.2rem;
     }
-    
+
     .hours-list {
         list-style: none;
         padding: 0;
     }
-    
+
     .social-container {
         font-size: 1rem;
         text-align: center;
     }
-    
+
     .social-title {
         font-size: 1.2rem;
     }
